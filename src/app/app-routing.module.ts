@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'', pathMatch: 'full', redirectTo:'incorrencias'
+    path:'', pathMatch: 'full', redirectTo:'regioes'
   },
   {
-    path: 'incorrencias',
-    loadChildren: () => import('./incorrencias/incorrencias.module').then(m => m.IncorrenciasModule)
+    path: 'regioes',
+    loadChildren: () => import('./regioes/regioes.module').then(m => m.RegioesModule)
   }
 ];
 
