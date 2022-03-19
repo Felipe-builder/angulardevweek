@@ -1,0 +1,24 @@
+<div class="margem">
+  <mat-card>
+    <mat-card-subtitle>
+      Consulta de exames de momografia - Relação de Regiões
+    </mat-card-subtitle>
+    <table matSort (matSortChange)="incorrencias">
+      <tr>
+        <th mat-sort-header="id">ID</th>
+        <th mat-sort-header="regiao_id">Região ID</th>
+        <th mat-sort-header="mes">Mês</th>
+        <th mat-sort-header="faixa_id">Faixa ID</th>
+        <th mat-sort-header="qnt_exames">Quantidade de Exames</th>
+      </tr>
+
+      <tr *ngFor="let element of incorrencias">
+        <td>{{element.id}}</td>
+        <td>{{element.regiao_id}}</td>
+        <td>{{element.mes}}</td>
+        <td>{{element.faixa_id}}</td>
+        <td>{{element.qnt_exames}}</td>
+      </tr>
+    </table>
+  </mat-card>
+</div>
