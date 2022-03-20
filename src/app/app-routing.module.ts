@@ -12,6 +12,10 @@ const routes: Routes = [
   {
     path: 'incorrencias',
     loadChildren: () => import('./incorrencias/incorrencias.module').then(m => m.IncorrenciasModule)
+  },
+  {
+    path: 'faixaetarias',
+    loadChildren: () => import('./faixas-etarias/faixas-etarias.module').then(m => m.FaixasEtariasModule)
   }
 ];
 

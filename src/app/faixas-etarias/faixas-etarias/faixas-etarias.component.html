@@ -1,0 +1,22 @@
+<div class="margem">
+  <mat-card>
+    <mat-card-subtitle>
+      Consulta de exames de momografia - Relação das Faixas Etárias
+    </mat-card-subtitle>
+    <table matSort (matSortChange)="faixas_etarias">
+      <tr>
+        <th mat-sort-header="id">ID</th>
+        <th mat-sort-header="faixa_i">A partir da idade</th>
+        <th mat-sort-header="faixa_n">Até a idade</th>
+        <th mat-sort-header="descricao">Descrição</th>
+      </tr>
+
+      <tr *ngFor="let element of faixas_etarias">
+        <td>{{element.id}}</td>
+        <td>{{element.faixa_i}}</td>
+        <td>{{element.faixa_n}}</td>
+        <td>{{element.descricao}}</td>
+      </tr>
+    </table>
+  </mat-card>
+</div>
