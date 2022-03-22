@@ -3,17 +3,17 @@ import { CommonModule } from '@angular/common';
 import { MatSortModule } from '@angular/material/sort';
 import { MatCardModule } from '@angular/material/card';
 
-import { RegioesRoutingModule } from './regioes-routing.module'
-import { RegioesComponent } from './regioes/regioes.component';
+import { ExamesRoutingModule } from './exames-routing.module'
+import { ExamesComponent } from './exames/exames.component';
 
 
 @NgModule({
   declarations: [
-    RegioesComponent
+    ExamesComponent
   ],
   imports: [
     CommonModule,
-    RegioesRoutingModule,
+    ExamesRoutingModule,
     MatSortModule,
     MatCardModule
   ]

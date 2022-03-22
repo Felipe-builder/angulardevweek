@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "regiao": "Norte",
+    "total":  44
+  },
+  {
+    "id": 2,
+    "regiao": "Nordeste",
+    "total":  13832
+  },
+  {
+    "id": 1,
+    "regiao": "Sudeste",
+    "total":  89657
+  },
+  {
+    "id": 1,
+    "regiao": "Sul",
+    "total":  122
+  },
+  {
+    "id": 1,
+    "regiao": "Centro-Oeste",
+    "total":  2581
+  }
+]

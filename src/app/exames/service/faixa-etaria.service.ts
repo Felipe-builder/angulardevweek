@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { FaixasEtarias } from '../model/faixas-etarias';
+import { FaixaEtaria } from '../model/faixa-etaria';
 
 @Injectable({
   providedIn: 'root'
 })
-export class FaixasEtariasService {
+export class FaixaEtariaService {
 
   constructor() { }
 
-  listarFaixaEtarias(): FaixasEtarias[] {
+  listarFaixaEtarias(): FaixaEtaria[] {
     return [
       {
         id:1 , faixa_i: 0, faixa_n: 10, descricao: 'Até 10 anos'

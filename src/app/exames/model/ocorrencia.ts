@@ -1,4 +1,4 @@
-export interface Incorrencia {
+export interface Ocorrencia {
   id: number,
   regiao_id: number,
   mes: number,

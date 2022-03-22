@@ -1,0 +1,69 @@
+<div class="margem">
+  <mat-card>
+    <mat-card-subtitle>
+      Consulta de exames de momografia - Relação de Regiões
+    </mat-card-subtitle>
+    <table matSort (matSortChange)="regioes">
+      <tr>
+        <th mat-sort-header="id">ID</th>
+        <th mat-sort-header="regiao">Região</th>
+        <th mat-sort-header="total">Nº de Exames</th>
+      </tr>
+
+      <tr *ngFor="let element of regioes">
+        <td>{{element.id}}</td>
+        <td>{{element.regiao}}</td>
+        <td>{{element.total}}</td>
+      </tr>
+    </table>
+  </mat-card>
+</div>
+
+<div class="margem">
+  <mat-card>
+    <mat-card-subtitle>
+      Consulta de exames de momografia - Relação das Faixas Etárias
+    </mat-card-subtitle>
+    <table matSort (matSortChange)="faixaetarias">
+      <tr>
+        <th mat-sort-header="id">ID</th>
+        <th mat-sort-header="faixa_i">A partir da idade</th>
+        <th mat-sort-header="faixa_n">Até a idade</th>
+        <th mat-sort-header="descricao">Descrição</th>
+      </tr>
+
+      <tr *ngFor="let element of faixaetarias">
+        <td>{{element.id}}</td>
+        <td>{{element.faixa_i}}</td>
+        <td>{{element.faixa_n}}</td>
+        <td>{{element.descricao}}</td>
+      </tr>
+    </table>
+  </mat-card>
+</div>
+
+<div class="margem">
+  <mat-card>
+    <mat-card-subtitle>
+      Consulta de exames de momografia - Relação de Incorrências
+    </mat-card-subtitle>
+    <table matSort (matSortChange)="ocorrencia_exame">
+      <tr>
+        <th mat-sort-header="id">ID</th>
+        <th mat-sort-header="regiao_id">Região ID</th>
+        <th mat-sort-header="mes">Mês</th>
+        <th mat-sort-header="faixa_id">Faixa ID</th>
+        <th mat-sort-header="qnt_exames">Quantidade de Exames</th>
+      </tr>
+
+      <tr *ngFor="let element of ocorrencia_exame">
+        <td>{{element.id}}</td>
+        <td>{{element.regiao_id}}</td>
+        <td>{{element.mes}}</td>
+        <td>{{element.faixa_id}}</td>
+        <td>{{element.qnt_exames}}</td>
+      </tr>
+    </table>
+  </mat-card>
+</div>
+

@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Incorrencia } from '../model/incorrencia';
+import { Ocorrencia } from '../model/ocorrencia';
 
 @Injectable({
   providedIn: 'root'
 })
-export class IncorrenciaService {
+export class OcorrenciaService {
 
   constructor() { }
 
-  listIncorrencias(): Incorrencia[] {
+  listIncorrencias(): Ocorrencia[] {
     return [
       {
         id: 1, regiao_id: 1, mes: 5, faixa_id: 2, qnt_exames: 1

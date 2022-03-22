@@ -3,19 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'', pathMatch: 'full', redirectTo:'regioes'
+    path:'', pathMatch: 'full', redirectTo:'exames'
   },
   {
-    path: 'regioes',
-    loadChildren: () => import('./regioes/regioes.module').then(m => m.RegioesModule)
-  },
-  {
-    path: 'incorrencias',
-    loadChildren: () => import('./incorrencias/incorrencias.module').then(m => m.IncorrenciasModule)
-  },
-  {
-    path: 'faixaetarias',
-    loadChildren: () => import('./faixas-etarias/faixas-etarias.module').then(m => m.FaixasEtariasModule)
+    path: 'exames',
+    loadChildren: () => import('./exames/exames.module').then(m => m.RegioesModule)
   }
 ];
 
