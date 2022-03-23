@@ -1,21 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Ocorrencia } from '../model/ocorrencia';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class OcorrenciaService {
 
-  constructor() { }
+  constructor(
+    private http:HttpClient
+  ) { }
 
-  listIncorrencias(): Ocorrencia[] {
-    return [
-      {
-        id: 1, regiao_id: 1, mes: 5, faixa_id: 2, qnt_exames: 1
-      },
-      {
-        id: 2, regiao_id: 1, mes: 5, faixa_id:4, qnt_exames: 2
-      }
-    ]
+  listOcorrencias(): Observable<Ocorrencia[]> {
+    const url = '/assets/ocorrencia.json'
+    return this.http.get<Ocorrencia[]>(url);
   }
 }
