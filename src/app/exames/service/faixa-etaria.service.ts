@@ -13,7 +13,7 @@ export class FaixaEtariaService {
   ) { }
 
   listarFaixaEtarias(): Observable<FaixaEtaria[]> {
-    const url = 'assets/faixaetaria.json'
+    const url = '/api/faixaetarias'
     return this.http.get<FaixaEtaria[]>(url)
   }
 }
