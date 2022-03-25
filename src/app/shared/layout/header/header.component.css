@@ -1,13 +1,19 @@
 .header {
   width: 100%;
   padding: 1rem 1.5rem;
-  /* font-size: ; */
   background-color: var(--background-color);
   font-size: var(--font-size);
   color: var(--primary-color);
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+}
+
+@media screen and (max-width: 480px){
+  .header {
+    justify-content: center;
+  }
 }
